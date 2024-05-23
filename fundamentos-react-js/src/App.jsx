@@ -1,11 +1,21 @@
-import { useState } from 'react'
+import { Post } from "./Post";
+import { Header } from "./componets/Header";
 
-
-function App() {
+export function App() {
   
   return (
-    <h1>Hello World</h1>
+    <div>
+      <Header/>
+      <Post
+        author="Wender Clayton"
+        content="Primeiro post!"
+      />
+      <Post
+        author="Zanelli Russeley"
+        content="Segundo post!"
+      />
+    </div>
   )
 }
 
-export default App
+
